@@ -50,15 +50,16 @@
 # Start with an if that checks if the age is less than 3
 
 # =================== 03 ANSWER ===================
-dog_age = input("Input a dog's age: ")
-dog_age = int(dog_age)
+# dog_age = input("Input a dog's age: ")
+# dog_age = int(dog_age)
 
-if dog_age < 3:
-    dog_age = dog_age * 10
-    print(f"The dog's age in dog years is {dog_age}!")
-else:
-    dog_age = ((dog_age - 2) * 7) + 20
-    print(f"The dog's age in dog years is {dog_age}!")
+# if dog_age < 3:
+#     dog_age = dog_age * 10
+#     print(f"The dog's age in dog years is {dog_age}!")
+# else:
+#     dog_age = ((dog_age - 2) * 7) + 20
+#     print(f"The dog's age in dog years is {dog_age}!")
+
 
 # exercise-04 What kind of Triangle?
 
@@ -75,9 +76,19 @@ else:
 # 3. Print a message such as:
 #      - A triangle with sides of <a>, <b> & <c> is a <type of triangle> triangle
 
+# =================== 04 ANSWER ===================
+print('Enter the lengths of three sides of a triangle: ')
+side_a = input('a: ')
+side_b = input('b: ')
+side_c = input('c: ')
 
+if side_a == side_b and side_b == side_c:
+    print(f'A triangle with sides of {side_a}, {side_b}, {side_c} is an equilateral triangle.')
 
-
+elif side_a != side_b and side_a != side_c and side_b != side_c:
+    print(f'A triangle with sides of {side_a}, {side_b}, {side_c} is a scalene triangle.')
+else:
+    print(f'A triangle with sides of {side_a}, {side_b}, {side_c} is an isosceles triangle.')
 
 
 # exercise-05 Fibonacci sequence for first 50 terms
