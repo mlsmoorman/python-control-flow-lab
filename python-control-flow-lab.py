@@ -77,18 +77,18 @@
 #      - A triangle with sides of <a>, <b> & <c> is a <type of triangle> triangle
 
 # =================== 04 ANSWER ===================
-print('Enter the lengths of three sides of a triangle: ')
-side_a = input('a: ')
-side_b = input('b: ')
-side_c = input('c: ')
+# print('Enter the lengths of three sides of a triangle: ')
+# side_a = input('a: ')
+# side_b = input('b: ')
+# side_c = input('c: ')
 
-if side_a == side_b and side_b == side_c:
-    print(f'A triangle with sides of {side_a}, {side_b}, {side_c} is an equilateral triangle.')
+# if side_a == side_b and side_b == side_c:
+#     print(f'A triangle with sides of {side_a}, {side_b}, {side_c} is an equilateral triangle.')
 
-elif side_a != side_b and side_a != side_c and side_b != side_c:
-    print(f'A triangle with sides of {side_a}, {side_b}, {side_c} is a scalene triangle.')
-else:
-    print(f'A triangle with sides of {side_a}, {side_b}, {side_c} is an isosceles triangle.')
+# elif side_a != side_b and side_a != side_c and side_b != side_c:
+#     print(f'A triangle with sides of {side_a}, {side_b}, {side_c} is a scalene triangle.')
+# else:
+#     print(f'A triangle with sides of {side_a}, {side_b}, {side_c} is an isosceles triangle.')
 
 
 # exercise-05 Fibonacci sequence for first 50 terms
@@ -109,8 +109,18 @@ else:
 # Use a while loop with a looping variable, or look into Python ranges, e.g.:
 #   for n in range(50):
 
+# =================== 05 ANSWER ===================
+num1 = 0
+num2 = 1
 
-
+for i in range(50):
+    if i < 2:
+        print(f'term: {i} / number: {i}')
+    else:
+        fibonacci = num1 + num2
+        print(f'term: {i} / number: {fibonacci}')
+        num1 = num2
+        num2 = fibonacci
 
 
 # exercise-06 What's the Season?
