@@ -18,9 +18,6 @@
 #     print(f'The letter {letter} is a vowel.')
 # else:
 #     print(f'The letter {letter} is a consonant.')
-    
-
-
 
 
 # exercise-02 Length of Phrase
@@ -33,8 +30,8 @@
 # 3. Return to step 1, unless the word 'quit' was entered.
 
 # =================== 02 ANSWER ===================
-phrase = input('Please enter a word or phrase: ')
-print(f'What you entered is {len(phrase)} characters long.')
+# phrase = input('Please enter a word or phrase: ')
+# print(f'What you entered is {len(phrase)} characters long.')
 
 
 # exercise-03 Calculate Dog Years
@@ -52,9 +49,16 @@ print(f'What you entered is {len(phrase)} characters long.')
 # Use the int() function to convert the string returned from input() into an integer
 # Start with an if that checks if the age is less than 3
 
+# =================== 03 ANSWER ===================
+dog_age = input("Input a dog's age: ")
+dog_age = int(dog_age)
 
-
-
+if dog_age < 3:
+    dog_age = dog_age * 10
+    print(f"The dog's age in dog years is {dog_age}!")
+else:
+    dog_age = ((dog_age - 2) * 7) + 20
+    print(f"The dog's age in dog years is {dog_age}!")
 
 # exercise-04 What kind of Triangle?
 
