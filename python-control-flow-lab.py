@@ -110,17 +110,17 @@
 #   for n in range(50):
 
 # =================== 05 ANSWER ===================
-num1 = 0
-num2 = 1
+# num1 = 0
+# num2 = 1
 
-for i in range(50):
-    if i < 2:
-        print(f'term: {i} / number: {i}')
-    else:
-        fibonacci = num1 + num2
-        print(f'term: {i} / number: {fibonacci}')
-        num1 = num2
-        num2 = fibonacci
+# for i in range(50):
+#     if i < 2:
+#         print(f'term: {i} / number: {i}')
+#     else:
+#         fibonacci = num1 + num2
+#         print(f'term: {i} / number: {fibonacci}')
+#         num1 = num2
+#         num2 = fibonacci
 
 
 # exercise-06 What's the Season?
@@ -144,3 +144,30 @@ for i in range(50):
 #
 # After setting the likely season, you can use another if...elif...else statement to "adjust" if
 # the day number falls within a certain range.
+
+# =================== 06 ANSWER ===================
+month = input("Enter the month of hte year (Jan - Dec): ")
+day = input("enter the day of the month: ")
+day = int(day)
+
+if month in ('Dec', 'Jan', 'Feb'):
+    season = 'Winter'
+    if month == 'Dec' and day < 21:
+        season = 'Fall'
+elif month in ('Mar', 'Apr', 'May'):
+    season = 'Spring'
+    if month == 'Mar' and day < 20:
+        season = 'Winter'
+elif month in ('Jun', 'Jul', 'Aug'):
+    season = 'Summer'
+    if month == 'Jun' and day < 21:
+        season = 'Spring'
+else:
+    season = 'Fall'
+    if month == 'Sep' and day < 22:
+        season = 'Summer'
+
+
+
+print(f'{month} {day} is in {season}')
+
